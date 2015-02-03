@@ -10,7 +10,7 @@
 
 <body>
     <ul class="nav">
-        <li class="nav__item">
+        <li class="nav__item nav__item--active">
             <a href="">
                 <span class="nav__image"><img src="img/icon-info.png"></span>
                 <span class="nav__text">Информация</span>
@@ -46,24 +46,166 @@
                 <span class="nav__text">Контакты</span>
             </a>
         </li>
+        <li class="nav__controls nav-up">
+            <a href="">
+                <span class="nav__image"><img src="img/icon-up.png"></span>
+            </a>
+        </li>
+        <li class="nav__controls nav-down nav__controls--active">
+            <a href="">
+                <span class="nav__image"><img src="img/icon-down.png"></span>
+            </a>
+        </li>
     </ul>
     <div id="fullpage">
 
-        <div class="frontpage">
+        <div class="frontpage section">
             <div class="grid">
-                <div class="header">
+                <div class="header header--frontpage">
                     <div class="logo"></div>
                     <a href="tel:+79458008888" class="phone">
                         <span class="image"><img src="img/icon-phone-1.png"></span>
                         <span class="text">8(945)800-88-88</span>
                     </a>
                 </div>
+                <div class="description">
+                    <div class="title">Get your car now</div>
+                    <div class="text">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. </div>
+                    <button type="button" class="button button--store">
+                        <span class="image"><img src="img/icon-apple.png"></span>
+                        <span class="text">Скачать приложение<br/>в APPSTORE</span>
+                    </button>
+                    <button type="button" class="button button--store">
+                        <span class="image"><img src="img/icon-android.png"></span>
+                        <span class="text">Скачать приложение<br/> в GOOGLE MARKET</span>
+                    </button>
+                </div>
+                <div class="footer">
+                    <button type="button">
+                        <span class="image"><img src="img/icon-check.png"></span>
+                        <span class="text">Заказать онлайн</span>
+                    </button>
+                    <div class="advise">
+                       <img src="img/avatar.png">
+                       <div class="text">
+                            <span>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin</span>
+                            <span>Анатолий Вершинин</span>
+                       </div>
+                    </div>
+                </div>
+                <div class="tip">
+                    <img src="img/icon-mouse.png">
+                    <span>Скрольте вниз чтобы узнать подробности</span>
+                </div>
             </div>
         </div>
 
-        <div class="order"></div>
+        <div class="order section">
+            <div class="top">
+                <div class="grid">
+                    <div class="header header--all">
+                        <div class="logo"></div>
+                        <a href="tel:+79458008888" class="phone">
+                            <span class="image"><img src="img/icon-phone-1.png"></span>
+                            <span class="text">8(945)800-88-88</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="grid">
+                    <div class="main-title">Заказать такси</div>
+                    <form>
+                        <div class="car-class">
+                            <div class="title">Выберите класс:</div><br/>
+                            <input type="radio" name="car-class" value="econom" id="econom" checked>
+                            <label for="econom"></label>Эконом-класс
+                            <input type="radio" name="car-class" value="business">
+                            <label for="business"></label>Бизнес-класс
+                            <input type="radio" name="car-class" value="vip">
+                            <label for="vip"></label>VIP-класс
+                        </div>
+                        <div class="person-data">
+                            <div class="title">Ваши данные:</div><br/>
+                            <input type="input" placeholder="Ваше имя">
+                            <input type="input" placeholder="Ваш телефон">
+                            <input type="input" placeholder="Ваш E-mail">
+                        </div>
+                        <div class="require-data">
+                            <div class="title">Вводная информация:</div><br/>
+                            <input type="input" placeholder="Адрес подачи авто">
+                            <input type="input" placeholder="Дата подачи авто">
+                            <input type="input" placeholder="Адрес назначения">
+                        </div>
+                    </form>
+                    <div class="additional">
+                        <span>* A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.</span>
+                        <button type="submit" class="button">Оформить заказ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <div class="tariffs"></div>
+        <div class="tariffs section">
+            <div class="top">
+                <div class="grid">
+                    <div class="header header--all">
+                        <div class="logo"></div>
+                        <a href="tel:+79458008888" class="phone">
+                            <span class="image"><img src="img/icon-phone-1.png"></span>
+                            <span class="text">8(945)800-88-88</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="grid">
+                    <div class="main-title">Тарифы</div>
+                    <div class="description">
+                        <div class="title">Ежедневно и круглосуточно</div>
+                        <div class="text">В стоимость включены 5 минут ожидания.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reviews section">
+            <div class="top">
+                <div class="grid">
+                    <div class="header header--all">
+                        <div class="logo"></div>
+                        <a href="tel:+79458008888" class="phone">
+                            <span class="image"><img src="img/icon-phone-1.png"></span>
+                            <span class="text">8(945)800-88-88</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="grid">
+                    <div class="main-title">Отзывы</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="partners section">
+            <div class="top">
+                <div class="grid">
+                    <div class="header header--all">
+                        <div class="logo"></div>
+                        <a href="tel:+79458008888" class="phone">
+                            <span class="image"><img src="img/icon-phone-1.png"></span>
+                            <span class="text">8(945)800-88-88</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="grid">
+                    <div class="main-title">Партнёрская программа</div>
+                </div>
+            </div>
+        </div>
 
     </div>
 
