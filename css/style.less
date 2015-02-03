@@ -296,16 +296,13 @@ input::-webkit-input-placeholder {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-
-    .image, .text {
-        opacity: .5;
-    }
+    box-sizing: border-box;
 
     &:hover {
-        background-color: @color-yellow-hover;
-        -webkit-box-shadow: 0px 2px 1px 0px rgba(50, 50, 50, 0.1), inset 0px 2px 0px 0px rgba(255, 255, 255, 0.3);;
-        -moz-box-shadow:    0px 2px 1px 0px rgba(50, 50, 50, 0.1),  inset 0px 2px 0px 0px rgba(255, 255, 255, 0.3);;
-        box-shadow:         0px 2px 1px 0px rgba(50, 50, 50, 0.1),  inset 0px 2px 0px 0px rgba(255, 255, 255, 0.3);;
+        background: @color-yellow-hover;
+        -webkit-box-shadow: 0px 2px 1px 0px rgba(50, 50, 50, 0.3), inset 0px 2px 0px 0px rgba(255, 255, 255, 0.35);
+        -moz-box-shadow:    0px 2px 1px 0px rgba(50, 50, 50, 0.3), inset 0px 2px 0px 0px rgba(255, 255, 255, 0.35);
+        box-shadow:         0px 2px 1px 0px rgba(50, 50, 50, 0.3), inset 0px 2px 0px 0px rgba(255, 255, 255, 0.35);
 
         &:after {
             content: '';
@@ -314,11 +311,7 @@ input::-webkit-input-placeholder {
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.15));
-        }
-
-        .image, .text {
-            opacity: 1;
+            background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2));
         }
     }
 }
@@ -376,6 +369,10 @@ input::-webkit-input-placeholder {
             display: inline-block;
             vertical-align: top;
 
+            .image, .text {
+                opacity: .5;
+            }
+
             &:first-of-type {
                 margin-right: 40px;
             }
@@ -395,6 +392,12 @@ input::-webkit-input-placeholder {
                 padding-left: 15px;
                 box-sizing: border-box;
                 text-align: left;
+            }
+
+            &:hover {
+                .image, .text {
+                    opacity: 1;
+                }
             }
         }
     }
@@ -579,11 +582,15 @@ input::-webkit-input-placeholder {
             border: 1px solid #e2e2e2;
             width: 270px;
             height: 45px;
-            margin-right: 20px;
+            &:not(:last-child) {
+
+                margin-right: 30px;
+            }
         }
     }
 
     .additional {
+        margin-top: 40px;
 
         span {
             width: 570px;
@@ -592,6 +599,103 @@ input::-webkit-input-placeholder {
             font-size: 14px;
             font-family: ArimoItalic;
             color: #cdcdcd;
+        }
+
+        .button {
+            font-size: 18px;
+            text-transform: uppercase;
+            padding: 15px 25px;
+            box-sizing: border-box;
+            border-radius: 25px;
+            float: right;
+            text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.46);
+        }
+    }
+}
+
+.tariffs {
+
+    .description {
+
+        .title {
+            font-size: 24px;
+            font-family: ArimoRegular;
+            color: @color-yellow;
+            margin-top: 40px;
+        }
+
+        .text {
+            font-size: 16px;
+            font-family: ArimoRegular;
+            color: #999999;
+            margin-top: 5px;
+        }
+    }
+
+    .cards {
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow:    0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+        box-shadow:         0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-top: 40px;
+
+        &__item {
+            width: 290px;
+            padding: 15px;
+            box-sizing: border-box;
+            display: inline-block;
+            vertical-align: top;
+
+            &:not(:last-child) {
+                border-right: 1px solid #e0e0e0;
+            }
+
+            .header {
+                position: relative;
+
+                .title {
+                    font-size: 18px;
+                    font-family: ArimoBold;
+                    color: #333333;
+                    margin-bottom: 5px;
+                }
+
+                .text {
+                    font-size: 14px;
+                    font-family: ArimoRegular;
+                    color: #b4b4b4;
+                    margin-bottom: 10px;
+                }
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 1px;
+                    background: @color-yellow;
+                }
+            }
+
+            img {
+                display: block;
+                padding: 30px 0;
+            }
+            .footer {
+                position: relative;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 1px;
+                    background: #f1f1f1;
+                }
+            }
         }
     }
 }
