@@ -326,6 +326,71 @@ input::-webkit-input-placeholder {
     border-bottom: 2px solid @color-yellow-hover;
 }
 
+.advise {
+    display: table-cell;
+    text-align: right;
+
+    img, .text {
+        display: inline-block;
+        vertical-align: bottom;
+    }
+
+    .text {
+        width: 250px;
+        padding: 10px 15px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        position: relative;
+        margin-left: 30px;
+        text-align: left;
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: -4px;
+            width: 30px;
+            height: 30px;
+            transform: rotate(-45deg) skewX(45deg);
+        }
+
+        span:first-child {
+            font-size: 14px;
+            font-family: ArimoItalic;
+            color: #7e7e7e;
+            display: block;
+        }
+
+        span:last-child {
+            font-size: 14px;
+            font-family: ArimoBoldItalic;
+            color: #7e7e7e;
+            display: block;
+            text-align: right;
+        }
+    }
+
+    &--frontpage {
+        .text {
+            background: @color-yellow-opacity;
+
+            &:after {
+                background: @color-yellow-opacity;
+            }
+        }
+    }
+
+    &--reviews {
+        .text {
+            background: #f6f6f6;
+
+            &:after {
+                background: #f6f6f6;
+            }
+        }
+    }
+}
+
 .frontpage {
     background: url(../img/bg-1.jpg) center no-repeat;
     background-size: cover;
@@ -429,53 +494,6 @@ input::-webkit-input-placeholder {
 
             &:hover {
                 background: #333333;
-            }
-        }
-
-        .advise {
-            display: table-cell;
-            text-align: right;
-
-            img, .text {
-                display: inline-block;
-                vertical-align: bottom;
-            }
-
-            .text {
-                width: 250px;
-                background: @color-yellow-opacity;
-                padding: 10px 15px;
-                box-sizing: border-box;
-                border-radius: 10px;
-                position: relative;
-                margin-left: 30px;
-                text-align: left;
-
-                &:after {
-                    content: '';
-                    position: absolute;
-                    bottom: -4px;
-                    left: -4px;
-                    width: 30px;
-                    height: 30px;
-                    background: @color-yellow-opacity;
-                    transform: rotate(-45deg) skewX(45deg);
-                }
-
-                span:first-child {
-                    font-size: 14px;
-                    font-family: ArimoItalic;
-                    color: #7e7e7e;
-                    display: block;
-                }
-
-                span:last-child {
-                    font-size: 14px;
-                    font-family: ArimoBoldItalic;
-                    color: #7e7e7e;
-                    display: block;
-                    text-align: right;
-                }
             }
         }
     }
@@ -747,3 +765,56 @@ input::-webkit-input-placeholder {
         }
     }
 }
+.reviews {
+
+    .description {
+        font-size: 14px;
+        font-family: ArimoRegular;
+        color: #b4b4b4;
+        margin-top: 2%;
+    }
+
+    .review {
+        text-align: center;
+        margin-top: 50px;
+
+        &__item {
+            display: inline-block;
+            vertical-align: top;
+            margin-bottom: 5%;
+
+            &:not(:nth-child(2n)) {
+                margin-right: 70px;
+            }
+        }
+    }
+
+    .spinner {
+        display: none;
+        margin: 0 auto;
+        margin-bottom: 1%;
+        -webkit-animation: rotate 1s linear infinite;
+
+        &--visible {
+            display: block;
+        }
+    }
+
+    .more {
+        font-size: 14px;
+        font-family: ArimoRegular;
+        color: @color-yellow;
+        display: block;
+        text-align: center;
+
+        span {
+            border-bottom: 1px solid @color-yellow;
+            cursor: pointer;
+        }
+    }
+}
+
+@-webkit-keyframes rotate {
+  to {transform: rotate(360deg);}
+}
+
