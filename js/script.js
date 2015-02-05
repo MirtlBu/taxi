@@ -1,5 +1,10 @@
 $(function() {
-    $('#fullpage').fullpage();
+    $('#fullpage').fullpage({
+        anchors: ['frontpage', 'order', 'tariffs', 'reviews', 'partners', 'contacts'],
+        menu: '.nav',
+        resize: false,
+        verticalCentered: false
+    });
 
     function renderReviews() {
         return $('<li/>', {'class': 'review__item'})
@@ -27,7 +32,13 @@ $(function() {
 
     $('.more').on('click', 'span', function() {
         showMore();
-    })
+    });
+
+    $('.nav').on('click', 'a', function() {
+        $('.nav').find('li').removeClass('nav__item--active');
+        $(this).closest('li').addClass('nav__item--active');
+    });
 
     insertReviews();
 });
+
