@@ -139,22 +139,26 @@ input::-webkit-input-placeholder {
 
         &--active {
 
-            a {
-                background: @color-yellow-hover;
 
-                & span {
-                    opacity: 1;
-                }
+        }
+    }
 
-                &:after {
-                    width: 100%;
-                    box-shadow: inset 0 -1px 1px rgba(0, 0, 0, .1);
-                }
-            }
+    li.active {
+        a {
+            background: @color-yellow-hover;
 
-            &:before {
+            & span {
                 opacity: 1;
             }
+
+            &:after {
+                width: 100%;
+                box-shadow: inset 0 -1px 1px rgba(0, 0, 0, .1);
+            }
+        }
+
+        &:before {
+            opacity: 1;
         }
     }
 
@@ -441,8 +445,6 @@ input::-webkit-input-placeholder {
 .frontpage {
     background: url(../img/bg-1.jpg) center no-repeat;
     background-size: cover;
-    width: 100%;
-    height: 100%;
     padding-top: 15px;
 
     .description {
@@ -451,7 +453,7 @@ input::-webkit-input-placeholder {
         transform: translateY(-50%);
 
         .title {
-            font-size: 85px;
+            font-size: 84px;
             font-family: ArimoBold;
             color: @color-white;
             text-transform: uppercase;
@@ -544,8 +546,6 @@ input::-webkit-input-placeholder {
 }
 
 .order {
-    width: 100%;
-    height: 100%;
 
     form {
         font-size: 14px;
@@ -774,6 +774,7 @@ input::-webkit-input-placeholder {
         }
     }
 }
+
 .reviews {
 
     .description {
@@ -1005,6 +1006,16 @@ input::-webkit-input-placeholder {
             }
         }
     }
+}
+
+#fullpage {
+    height: 100%;
+}
+
+.section {
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 
