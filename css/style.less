@@ -921,5 +921,91 @@ input::-webkit-input-placeholder {
     }
 }
 
+.contacts {
+
+    .description {
+        font-size: 14px;
+        font-family: ArimoRegular;
+        color: #b4b4b4;
+        margin-top: 2%;
+    }
+
+    .cities {
+        margin-top: 2%;
+        width: 100%;
+        display: table;
+
+        &__item {
+
+            display: table-cell;
+
+            img.city {
+                position: relative;
+                left: 50px;
+            }
+
+            .title {
+                font-size: 24px;
+                font-family: ArimoRegular;
+                color: @color-yellow;
+                margin-bottom: 4%;
+            }
+
+            li {
+                margin-bottom: 20px;
+            }
+
+            .image {
+                display: inline-block;
+                vertical-align: top;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: @color-yellow;
+                margin-right: 5px;
+
+                img {
+                    display: block;
+                    position: relative;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+            .text {
+                display: inline-block;
+                vertical-align: top;
+                margin-top: 10px;
+
+                span {
+                    display: block;
+                }
+            }
+
+            .phone {
+                font-size: 18px;
+                font-family: ArimoBold;
+                color: #333333;
+            }
+
+            .address {
+                font-size: 16px;
+                font-family: ArimoRegular;
+                color: #333333;
+            }
+
+            .email {
+                a {
+                    font-size: 16px;
+                    font-family: ArimoRegular;
+                    color: @color-yellow;
+                    border-bottom: 1px solid @color-yellow;
+                }
+            }
+        }
+    }
+}
+
 
 
