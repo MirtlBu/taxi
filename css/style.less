@@ -138,11 +138,7 @@ input::-webkit-input-placeholder {
 
             a {
                 background: linear-gradient(#fcc400, #fdd035);
-                -webkit-box-shadow:
-                inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75),
-                inset 0px 0px 0px 0px rgba(0, 0, 0, 0),
-                inset 0px -1px 1px 0px rgba(0, 0, 0, 0.15),
-                inset 0px 0px 0px 0px rgba(255, 255, 255, 0);
+                box-shadow: inset 0 4px 2px -2px rgba(255,255,255,0.75),inset 0 -2px 1px -1px rgba(0,0,0,0.15);
             }
 
             .nav__image {
@@ -173,8 +169,49 @@ input::-webkit-input-placeholder {
         }
 
         &--controls {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+
             .nav__image {
-                border: 1px solid white;
+                border: 1px solid rgba(255, 255, 255, 0.5);
+            }
+
+            .arrow {
+                width: 15px;
+                height: 10px;
+                display: block;
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            &:hover {
+
+                .nav__image {
+                    border: 1px solid transparent;
+                    background: rgba(255, 255, 255, 0.5);
+
+                    .arrow {
+                        background-position: -15px 0;
+                    }
+                }
+            }
+        }
+
+        &--up {
+            bottom: 65px;
+            .arrow {
+                background: url(../img/icon-up.png);
+            }
+        }
+
+        &--down {
+            bottom: 5px;
+            .arrow {
+                background: url(../img/icon-down.png);
             }
         }
     }
@@ -202,6 +239,7 @@ input::-webkit-input-placeholder {
     }
 
     &__item.active {
+
         a {
             background: linear-gradient(#fcc400, #fdd035);
             -webkit-box-shadow:
@@ -952,7 +990,7 @@ input::-webkit-input-placeholder {
         display: table;
 
         &__item {
-
+            width: 50%;
             display: table-cell;
 
             img.city {
@@ -1021,6 +1059,28 @@ input::-webkit-input-placeholder {
             }
         }
     }
+     button {
+        font-size: 18px;
+        font-family: ArimoRegular;
+        color: @color-yellow;
+        text-transform: uppercase;
+        border: 1px solid @color-yellow;
+        padding: 15px 50px;
+        box-sizing: border-box;
+        border-radius: 30px;
+        cursor: pointer;
+        -webkit-font-smoothing: antialiased;
+        position: relative;
+        margin-top: 2%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        &:hover {
+            color: @color-white;
+            border: 1px solid transparent;
+            background: @color-yellow;
+        }
+     }
 }
 
 #fullpage {
@@ -1031,6 +1091,10 @@ input::-webkit-input-placeholder {
     width: 100%;
     height: 100%;
     position: relative;
+}
+
+.hidden {
+    display: none;
 }
 
 

@@ -3,8 +3,39 @@ $(function() {
         anchors: ['frontpage', 'order', 'tariffs', 'reviews', 'partners', 'contacts'],
         menu: '.nav',
         resize: false,
-        verticalCentered: false
+        verticalCentered: false,
+        afterLoad: function(anchorLink, index) {
+            disableArrow(index);
+        }
     });
+
+    $('.nav__item--up').on('click', 'a', function() {
+        $.fn.fullpage.moveSectionUp();
+        return false;
+    });
+
+    $('.nav__item--down').on('click', 'a', function() {
+        $.fn.fullpage.moveSectionDown();
+        return false;
+    });
+
+    function disableArrow(index) {
+
+        if(index == 1) {
+            console.log(index);
+            $('.nav__item--up').addClass('hidden');
+            $('.nav__item--down').removeClass('hidden');
+        }
+        else if(index == 6) {
+            console.log(index);
+            $('.nav__item--down').addClass('hidden');
+            $('.nav__item--up').removeClass('hidden');
+        }
+        else {
+            console.log(index);
+            $('.nav__item--up, .nav__item--down').removeClass('hidden');
+        }
+    }
 
     function renderReviews() {
         return $('<li/>', {'class': 'review__item'})
@@ -32,11 +63,6 @@ $(function() {
 
     $('.more').on('click', 'span', function() {
         showMore();
-    });
-
-    $('.nav').on('click', 'a', function() {
-        $('.nav').find('li').removeClass('nav__item--active');
-        $(this).closest('li').addClass('nav__item--active');
     });
 
     insertReviews();
