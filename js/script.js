@@ -3,12 +3,12 @@ $(function() {
     var reviews = [
         {
             name: 'Анатолий Вершинин',
-            text: 'One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin',
+            text: 'One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed.',
             url: 'img/avatar-2.png'
         },
         {
             name: 'Мария Иванова',
-            text: 'One morning, when Gregor Samsa woke from troubled dreams.',
+            text: 'He found himself transformed in his bed into a horrible verminOne morning, when Gregor Samsa woke from troubled dreams...',
             url: 'img/avatar-1.png'
         }
     ]
