@@ -114,33 +114,37 @@
             </div>
             <div class="content">
                 <div class="grid">
-                    <div class="main-title">Заказать такси</div>
-                    <form>
-                        <div class="car-class">
-                            <div class="title">Выберите класс:</div><br/>
-                            <input type="radio" name="car-class" value="econom" id="econom" checked>
-                            <label for="econom"></label>Эконом-класс
-                            <input type="radio" name="car-class" value="business" id="business">
-                            <label for="business"></label>Бизнес-класс
-                            <input type="radio" name="car-class" value="vip" id="vip">
-                            <label for="vip"></label>VIP-класс
+                    <div class="center">
+                        <div class="main-title">Заказать такси</div>
+                        <form>
+                            <div class="car-class">
+                                <div class="title">Выберите класс:</div><br/>
+                                <input type="radio" name="car-class" value="econom" id="econom" checked>
+                                <label for="econom"></label>Эконом-класс
+                                <input type="radio" name="car-class" value="business" id="business">
+                                <label for="business"></label>Бизнес-класс
+                                <input type="radio" name="car-class" value="vip" id="vip">
+                                <label for="vip"></label>VIP-класс
+                            </div>
+                            <div class="person-data">
+                                <div class="title">Ваши данные:</div><br/>
+                                <input type="input" placeholder="Ваше имя">
+                                <input type="input" placeholder="Ваш телефон">
+                                <input type="input" placeholder="Ваш E-mail">
+                            </div>
+                            <div class="require-data">
+                                <div class="title">Вводная информация:</div><br/>
+                                <input type="input" placeholder="Адрес подачи авто">
+                                <input type="input" placeholder="Дата подачи авто">
+                                <input type="input" placeholder="Адрес назначения">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="bottom">
+                        <div class="additional">
+                            <span>* A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.</span>
+                            <button type="submit" class="button">Оформить заказ</button>
                         </div>
-                        <div class="person-data">
-                            <div class="title">Ваши данные:</div><br/>
-                            <input type="input" placeholder="Ваше имя">
-                            <input type="input" placeholder="Ваш телефон">
-                            <input type="input" placeholder="Ваш E-mail">
-                        </div>
-                        <div class="require-data">
-                            <div class="title">Вводная информация:</div><br/>
-                            <input type="input" placeholder="Адрес подачи авто">
-                            <input type="input" placeholder="Дата подачи авто">
-                            <input type="input" placeholder="Адрес назначения">
-                        </div>
-                    </form>
-                    <div class="additional">
-                        <span>* A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.</span>
-                        <button type="submit" class="button">Оформить заказ</button>
                     </div>
                 </div>
             </div>
@@ -160,60 +164,64 @@
             </div>
             <div class="content">
                 <div class="grid">
-                    <div class="main-title">Тарифы</div>
-                    <div class="description">
-                        <div class="title">Ежедневно и круглосуточно</div>
-                        <div class="text">В стоимость включены 5 минут ожидания.</div>
+                    <div class="center">
+                        <div class="main-title">Тарифы</div>
+                        <div class="description">
+                            <div class="title">Ежедневно и круглосуточно</div>
+                            <div class="text">В стоимость включены 5 минут ожидания.</div>
+                        </div>
+                        <div class="cards">
+                            <div class="cards__item">
+                                <div class="header">
+                                    <div class="title">Эконом-класс</div>
+                                    <div class="text">Ford Focus, Ford Galaxy, Hyundai</div>
+                                </div>
+                                <img src="img/car-1.jpg" height="110">
+                                <div class="footer">
+                                    <div class="start-price">50 ₽</div>
+                                    <div class="end-price">Посадка <br/>+ <span>18 руб</span>/мин</div>
+                                </div>
+                            </div>
+                            <div class="cards__item">
+                                <div class="header">
+                                    <div class="title">Бизнес-класс</div>
+                                    <div class="text">Mercedes E, BMW 5, Audio A6</div>
+                                </div>
+                                <img src="img/car-2.jpg" height="110">
+                                <div class="footer">
+                                    <div class="start-price">80 ₽</div>
+                                    <div class="end-price">Посадка <br/>+ <span>25 руб</span>/мин</div>
+                                </div>
+                            </div>
+                            <div class="cards__item">
+                                <div class="header">
+                                    <div class="title">VIP-класс</div>
+                                    <div class="text">Mercedes S, BMW 7, Audio A8, Equus</div>
+                                </div>
+                                <img src="img/car-3.jpg" height="110">
+                                <div class="footer">
+                                    <div class="start-price">150 ₽</div>
+                                    <div class="end-price">Посадка <br/>+ <span>30 руб</span>/мин</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="cards">
-                        <div class="cards__item">
-                            <div class="header">
-                                <div class="title">Эконом-класс</div>
-                                <div class="text">Ford Focus, Ford Galaxy, Hyundai</div>
-                            </div>
-                            <img src="img/car-1.jpg" height="110">
-                            <div class="footer">
-                                <div class="start-price">50 ₽</div>
-                                <div class="end-price">Посадка <br/>+ <span>18 руб</span>/мин</div>
-                            </div>
-                        </div>
-                        <div class="cards__item">
-                            <div class="header">
-                                <div class="title">Бизнес-класс</div>
-                                <div class="text">Mercedes E, BMW 5, Audio A6</div>
-                            </div>
-                            <img src="img/car-2.jpg" height="110">
-                            <div class="footer">
-                                <div class="start-price">80 ₽</div>
-                                <div class="end-price">Посадка <br/>+ <span>25 руб</span>/мин</div>
-                            </div>
-                        </div>
-                        <div class="cards__item">
-                            <div class="header">
-                                <div class="title">VIP-класс</div>
-                                <div class="text">Mercedes S, BMW 7, Audio A8, Equus</div>
-                            </div>
-                            <img src="img/car-3.jpg" height="110">
-                            <div class="footer">
-                                <div class="start-price">150 ₽</div>
-                                <div class="end-price">Посадка <br/>+ <span>30 руб</span>/мин</div>
-                            </div>
-                        </div>
+                    <div class="bottom">
+                        <ul class="tip">
+                            <li class="tip__item">
+                                <img src="img/icon-check-3.png">
+                                <span>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.</span>
+                            </li>
+                            <li class="tip__item">
+                                <img src="img/icon-check-3.png">
+                                <span>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</span>
+                            </li>
+                            <li class="tip__item">
+                                <img src="img/icon-check-3.png">
+                                <span>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot.</span>
+                            </li>
+                        </ul>
                     </div>
-                    <ul class="tip">
-                        <li class="tip__item">
-                            <img src="img/icon-check-3.png">
-                            <span>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.</span>
-                        </li>
-                        <li class="tip__item">
-                            <img src="img/icon-check-3.png">
-                            <span>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</span>
-                        </li>
-                        <li class="tip__item">
-                            <img src="img/icon-check-3.png">
-                            <span>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot.</span>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
@@ -232,13 +240,17 @@
             </div>
             <div class="content">
                 <div class="grid">
-                    <div class="main-title">Отзывы</div>
-                    <div class="description">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.</div>
-                    <ul class="review">
-                        <!--render-->
-                    </ul>
-                    <img class="spinner" src="img/spinner.png">
-                    <a class="more"><span>Показать ещё</span></a>
+                    <div class="center">
+                        <div class="main-title">Отзывы</div>
+                        <div class="description">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.</div>
+                        <ul class="review">
+                            <!--render-->
+                        </ul>
+                    </div>
+                    <div class="bottom">
+                        <img class="spinner" src="img/spinner.png">
+                        <a class="more"><span>Показать ещё</span></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -257,53 +269,57 @@
             </div>
             <div class="content">
                 <div class="grid">
-                    <div class="main-title">Партнёрская программа</div>
-                    <div class="infograph">
-                        <ul class="steps">
-                            <li class="steps__item">
-                                <div class="image"><img src="img/icon-cellphone.png"></div>
-                                <div class="text">
-                                    <span>1.</span>
-                                    <span>Установи приложение TAXI </span>
-                                    <span>и начни им пользоваться</span>
-                                </div>
-                            </li>
-                            <li class="steps__item">
-                                <div class="text">
-                                    <span>2.</span>
-                                    <span>Приглашай друзей </span>
-                                    <span>и знакомь их с правилами игры</span>
-                                </div>
-                                <div class="image"><img src="img/icon-guys.png"></div>
-                            </li>
-                            <li class="steps__item">
-                                <div class="image"><img src="img/icon-star.png"></div>
-                                <div class="text">
-                                    <span>3.</span>
-                                    <span>Получайте бонусы </span>
-                                    <span>за приглашенных друзей и их друзей</span>
-                                </div>
-                            </li>
-                            <li class="steps__item">
-                                <div class="text">
-                                    <span>4.</span>
-                                    <span>Получайте подарки </span>
-                                    <span>за ваши бонусные очки</span>
-                                </div>
-                                <div class="image"><img src="img/icon-guys.png"></div>
-                            </li>
-                        </ul>
-                        <div style="clear: both;"></div>
-                        <div class="buttons">
-                            <button type="button" class="button button--store">
-                                <span class="image"><img src="img/icon-apple.png"></span>
-                                <span class="text">Скачать приложение<br/>в APPSTORE</span>
-                            </button>
-                            <button type="button" class="button button--store">
-                                <span class="image"><img src="img/icon-android.png"></span>
-                                <span class="text">Скачать приложение<br/> в GOOGLE MARKET</span>
-                            </button>
+                    <div class="center">
+                        <div class="main-title">Партнёрская программа</div>
+                        <div class="infograph">
+                            <ul class="steps">
+                                <li class="steps__item">
+                                    <div class="image"><img src="img/icon-cellphone.png"></div>
+                                    <div class="text">
+                                        <span>1.</span>
+                                        <span>Установи приложение TAXI </span>
+                                        <span>и начни им пользоваться</span>
+                                    </div>
+                                </li>
+                                <li class="steps__item">
+                                    <div class="text">
+                                        <span>2.</span>
+                                        <span>Приглашай друзей </span>
+                                        <span>и знакомь их с правилами игры</span>
+                                    </div>
+                                    <div class="image"><img src="img/icon-guys.png"></div>
+                                </li>
+                                <li class="steps__item">
+                                    <div class="image"><img src="img/icon-star.png"></div>
+                                    <div class="text">
+                                        <span>3.</span>
+                                        <span>Получайте бонусы </span>
+                                        <span>за приглашенных друзей и их друзей</span>
+                                    </div>
+                                </li>
+                                <li class="steps__item">
+                                    <div class="text">
+                                        <span>4.</span>
+                                        <span>Получайте подарки </span>
+                                        <span>за ваши бонусные очки</span>
+                                    </div>
+                                    <div class="image"><img src="img/icon-guys.png"></div>
+                                </li>
+                            </ul>
+                            <div style="clear: both;"></div>
                         </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="buttons">
+                        <button type="button" class="button button--store">
+                            <span class="image"><img src="img/icon-apple.png"></span>
+                            <span class="text">Скачать приложение<br/>в APPSTORE</span>
+                        </button>
+                        <button type="button" class="button button--store">
+                            <span class="image"><img src="img/icon-android.png"></span>
+                            <span class="text">Скачать приложение<br/> в GOOGLE MARKET</span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -322,63 +338,67 @@
             </div>
             <div class="content">
                 <div class="grid">
-                    <div class="main-title">Наши контакты</div>
-                    <div class="description">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.</div>
-                    <div class="cities">
-                        <div class="cities__item">
-                            <img class="city" src="img/moscow.jpg">
-                            <div class="title">Контакты в Москве</div>
-                            <ul>
-                                <li class="phone">
-                                    <div class="image"><img src="img/icon-phone-2.png"></div>
-                                    <div class="text">
-                                        <span>8(495)800-88-88</span>
-                                    </div>
-                                </li>
-                                <li class="address">
-                                    <div class="image"><img src="img/icon-pin-2.png"></div>
-                                    <div class="text">
-                                        <span>ул. Старая, 34/2</span>
-                                        <span>ул. Проспект Мира, 1/25</span>
-                                        <span>ул. Новая, 25к1</span>
-                                    </div>
-                                </li>
-                                <li class="email">
-                                    <div class="image"><img src="img/icon-mail-1.png"></div>
-                                    <div class="text">
-                                        <span><a href="mailto:example@gmail.com">example@gmail.com</a></span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="cities__item">
-                            <img class="city" src="img/spb.jpg">
-                            <div class="title">Контакты в Санкт-Петербурге</div>
-                            <ul>
-                                <li class="phone">
-                                    <div class="image"><img src="img/icon-phone-2.png"></div>
-                                    <div class="text">
-                                        <span>8(495)800-88-88</span>
-                                    </div>
-                                </li>
-                                <li class="address">
-                                    <div class="image"><img src="img/icon-pin-2.png"></div>
-                                    <div class="text">
-                                        <span>Невский пр-т, 34/2</span>
-                                        <span>ул. Проспект Мира, 1/25</span>
-                                        <span>ул. Старая, 25к1</span>
-                                    </div>
-                                </li>
-                                <li class="email">
-                                    <div class="image"><img src="img/icon-mail-1.png"></div>
-                                    <div class="text">
-                                        <span><a href="mailto:example@gmail.com">example@gmail.com</a></span>
-                                    </div>
-                                </li>
-                            </ul>
+                    <div class="center">
+                        <div class="main-title">Наши контакты</div>
+                        <div class="description">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.</div>
+                        <div class="cities">
+                            <div class="cities__item">
+                                <img class="city" src="img/moscow.jpg">
+                                <div class="title">Контакты в Москве</div>
+                                <ul>
+                                    <li class="phone">
+                                        <div class="image"><img src="img/icon-phone-2.png"></div>
+                                        <div class="text">
+                                            <span>8(495)800-88-88</span>
+                                        </div>
+                                    </li>
+                                    <li class="address">
+                                        <div class="image"><img src="img/icon-pin-2.png"></div>
+                                        <div class="text">
+                                            <span>ул. Старая, 34/2</span>
+                                            <span>ул. Проспект Мира, 1/25</span>
+                                            <span>ул. Новая, 25к1</span>
+                                        </div>
+                                    </li>
+                                    <li class="email">
+                                        <div class="image"><img src="img/icon-mail-1.png"></div>
+                                        <div class="text">
+                                            <span><a href="mailto:example@gmail.com">example@gmail.com</a></span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="cities__item">
+                                <img class="city" src="img/spb.jpg">
+                                <div class="title">Контакты в Санкт-Петербурге</div>
+                                <ul>
+                                    <li class="phone">
+                                        <div class="image"><img src="img/icon-phone-2.png"></div>
+                                        <div class="text">
+                                            <span>8(495)800-88-88</span>
+                                        </div>
+                                    </li>
+                                    <li class="address">
+                                        <div class="image"><img src="img/icon-pin-2.png"></div>
+                                        <div class="text">
+                                            <span>Невский пр-т, 34/2</span>
+                                            <span>ул. Проспект Мира, 1/25</span>
+                                            <span>ул. Старая, 25к1</span>
+                                        </div>
+                                    </li>
+                                    <li class="email">
+                                        <div class="image"><img src="img/icon-mail-1.png"></div>
+                                        <div class="text">
+                                            <span><a href="mailto:example@gmail.com">example@gmail.com</a></span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <button type="button">Написать нам</button>
+                    <div class="bottom">
+                        <button type="button">Написать нам</button>
+                    </div>
                 </div>
             </div>
         </div>
